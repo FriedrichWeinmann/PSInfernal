@@ -92,7 +92,7 @@ if ($LocalRepo)
 else
 {
 	# Hack the Dependency Check
-	function global:Test-Nothing { }
+	function global:Test-Nothing { $true }
 	Set-Alias -Name 'Microsoft.PowerShell.Core\Test-ModuleManifest' -Value Test-Nothing -Scope Global
 
 	# Publish to Gallery
