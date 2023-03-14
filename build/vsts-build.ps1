@@ -92,8 +92,8 @@ if ($LocalRepo)
 else
 {
 	# Hack the Dependency Check
-	function global:Test-Nothing { $true }
-	Set-Alias -Name 'Microsoft.PowerShell.Core\Test-ModuleManifest' -Value Test-Nothing -Scope Global
+	# function global:Test-Nothing { $true }
+	# Set-Alias -Name 'Microsoft.PowerShell.Core\Test-ModuleManifest' -Value Test-Nothing -Scope Global
 
 	# Publish to Gallery
 	Write-Host  "Publishing the PSInfernal module to $($Repository)"

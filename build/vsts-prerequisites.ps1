@@ -2,7 +2,7 @@
     [string]
     $Repository = 'PSGallery'
 )
-return
+
 $modules = @("Pester", "PSScriptAnalyzer")
 
 # Automatically add missing dependencies
